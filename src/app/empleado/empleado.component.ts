@@ -15,9 +15,7 @@ export class EmpleadoComponent implements OnInit{
     return this.edad;
   }
 
-  llamaEmpresa(value:String){
-    
-  }
+  
   
   constructor(){}
 
