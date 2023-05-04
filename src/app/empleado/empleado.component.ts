@@ -9,7 +9,7 @@ export class EmpleadoComponent implements OnInit{
   nombre = "Juan"
   apellido = "Diaz"
   edad=17;
-  //empresa="Babel Group"
+  empresa="Babel Group"
 
   getEdad(){
     return this.edad;
