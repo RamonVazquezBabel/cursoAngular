@@ -3,10 +3,15 @@
 <p>edad del empleado: {{edad<18?"Menor de edad":"Mayor de edad"}}</p>
 <p>Empresa del empleado: {{empresa.value}}</p> 
 
-Introduce la empresa: <input type="text" #empresa (keyup)="0">
+Introduce la empresa: <input type="text" #empresa (keyup)="0" [disabled] = "habilitarCuadro">
 
 <br/>
 <br/>
+{{textoDeRegistro}}
+<br>
+Registrado: <input type="radio" value="si" name="nRegistro" id="registro" [checked]="usuRegistrado" (click)="setUsuarioRegistrado($event)"><!--En este enlace estan todos los posibles eventos en angular https://www.w3bai.com/es/angular/angular_events.html#gsc.tab=0-->
+No registrado: <input type="radio" value="no" name="nRegistro" (click)="setUsuarioRegistrado($event)">
+{{getRegistroUsuario()}}
 
 
 
